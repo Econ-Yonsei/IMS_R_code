@@ -7,9 +7,6 @@ cdf_a<-function(x){
   return(y)
 }
 
-quantile(pdf_a(x),0.25) #the first quantile
-
-quantile(pdf_a(x),0.6) # the 0.6 quantile
 
 
 #(b)
@@ -26,9 +23,6 @@ pdf_b<-function(x){
 
 par(mfrow=c(1,2));plot(cdf_b(x)~x);plot(pdf_b(x)~x)
 
-quantile(pdf_b(x),0.25) #the first quantile 
-quantile(pdf_b(x),0.60) #the 0.6 quantile
-
 #(c)
 x<-seq(-5,5,.01)
 
@@ -43,9 +37,6 @@ pdf_c<-function(x){
 }
 
 par(mfrow=c(1,2));plot(cdf_c(x)~x);plot(pdf_c(x)~x)
-
-quantile(pdf_c(x),0.25) #the first quantile 
-quantile(pdf_c(x),0.60) #the 0.6 quantile
 
 
 
