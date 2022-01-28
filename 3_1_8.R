@@ -8,3 +8,11 @@ for(i in prob) {
   plot(dbinom(x,15,i)~x)
   title(paste('p=',i))
 }
+
+###(c)###
+par(mfrow=c(2,2))
+n<-c(10,20,50,200)
+for(i in n) {
+  plot(dbinom(x,i,0.05)~x)
+  title(paste('n=',i))
+}
