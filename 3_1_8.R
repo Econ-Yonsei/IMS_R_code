@@ -15,4 +15,8 @@ n<-c(10,20,50,200)
 for(i in n) {
   plot(dbinom(x,i,0.05)~x)
   title(paste('n=',i))
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0165274d0309d9096bc54fc73c4a45c2687b9c15
